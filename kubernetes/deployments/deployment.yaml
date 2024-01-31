@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: challenge-deployment
+  name: challenge-clientes-deployment
   # namespace: challenge
 spec:
   replicas: 1
