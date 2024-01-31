@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postgres-deployment
+  name: postgres-clientes-deployment
   # namespace: postgres
 spec:
   replicas: 1  
   selector:
     matchLabels:
-      app: postgres
+      app: postgres-clientes
   template:
     metadata:
       labels:
-        app: postgres
+        app: postgres-clientes
     spec:
       containers:
-        - name: postgres-container
+        - name: postgres-clientes-container
           image: postgres
           envFrom:
             - configMapRef:
-                name: db-deployment-configmap
+                name: db-deployment-clientes-configmap
             - secretRef:
-                name:  postgres-secrets
+                name:  postgres-clientes-secrets
           ports:
             - containerPort: 5432
           
