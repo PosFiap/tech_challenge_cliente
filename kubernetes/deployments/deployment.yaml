@@ -18,7 +18,7 @@ spec:
         - name: challenge-clientes-container
           image: encortondo/fiap-tech-challenge-clientes
           ports:
-            - containerPort: 8080  
+            - containerPort: 8081  
           command: ["npm", "run", "start"]
           envFrom:
             - configMapRef:

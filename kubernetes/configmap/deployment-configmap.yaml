@@ -5,6 +5,6 @@ metadata:
   # namespace: challenge
 data:
   DB_HOST: postgresql://posfiap:posfiap2@postgres-clientes-service:5432/posfiap
-  PORT: "8080"
+  PORT: "8081"
   ID_USUARIO_MP: usuario
   ID_EXTERNO_CAIXA: cx01
